@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: django-selectize
+Version: 1.2
+Summary: django-selectize is a Django app based on Selectize.js that help you to create Select and Multiselect widgets in Django forms.
+Home-page: https://github.com/djangoer/django-selectize
+Author: Djangoer
+Author-email: djangoer0@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

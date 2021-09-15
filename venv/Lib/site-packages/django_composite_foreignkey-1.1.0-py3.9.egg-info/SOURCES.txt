@@ -1,0 +1,15 @@
+CONTRIBUTING.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+compositefk/__init__.py
+compositefk/compat.py
+compositefk/fields.py
+compositefk/related_descriptors.py
+django_composite_foreignkey.egg-info/PKG-INFO
+django_composite_foreignkey.egg-info/SOURCES.txt
+django_composite_foreignkey.egg-info/dependency_links.txt
+django_composite_foreignkey.egg-info/not-zip-safe
+django_composite_foreignkey.egg-info/top_level.txt

@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+                        <div class="row">
+                            <!-- Google Map Start -->
+                            <div class="col-md-12 col-xl-8">
+                                <div class="card row">
+                                    <div class="card-block">
+                                        <div id="GoogleMap" style="height:517px;"></div>
+                                    </div>
+                                </div>
+                                <div class="row" id="listData1">
+
+                                </div>
+                            </div>
+                            <!-- Google Map End -->
+                            <div class="col-md-12 col-xl-4">
+                                <!-- search Rout Bus Start-->
+                                <div class="card fb-card">
+                                    <div class="card-header">
+                                        <div class="d-inline-block">
+                                            <h3>ค้นหาจุดจอดรถสองแถว</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-block text-center">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <select id="initiate"
+                                                        placeholder="ต้นทาง">
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <select id="destination"
+                                                        placeholder="ปลายทาง">
+                                                    <option></option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div style="padding-top: 20px;">
+                                            <button class="btn btn-primary" style="font-weight: bold;font-size: 15px"
+                                                    id="searchRout"><i
+                                                    class="icofont icofont-ui-search"></i>ค้นหา
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- search Rout Bus End-->
+
+                                <!-- show Rout Bus Start-->
+                                <div class="card twitter-card">
+                                    <div class="card-header">
+                                        <div class="d-inline-block">
+                                            <h3>ผลการค้นหา</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-block">
+                                        <div class="row" id="busRout">
+
+                                                ยังไม่มีผลการค้นหา
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- show Rout Bus End-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaQeKMSLPx8XxIlphS7_hxgPdybyUb_OM&callback=initMap">
+    </script>
+    <script src="{% static 'js/index.js' %}"></script>
+{% endblock %}

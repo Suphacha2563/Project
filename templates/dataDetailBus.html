@@ -1,0 +1,99 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <script>
+        var id =
+        {{ id }}
+    </script>
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+                        <div class="row">
+                            <!-- photo -->
+                            <div class="col-md-12 col-xl-8">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <div class="card-header-left gallery " id="fontCar">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-6">
+                                        <div class="card">
+                                            <div class="card-header" style="margin-left: auto;margin-right: auto;">
+                                                <div class="card-header-left " id="iconCar" class="col-md-6">
+                                                    <img src="/static/testCar.PNG" style="width: 200px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card dribble-card">
+                                            <div class="card-header">
+                                                <div class="d-inline-block">
+                                                    <h3>รายละเอียดรถสองแถว</h3>
+                                                </div>
+                                            </div>
+                                            <div class="card-block text-center">
+                                                <div class="row dataBusDetail">
+                                                    <div class="col-md-4" style="text-align: right">ชื่อรถสองแถว :</div>
+                                                    <div class="col-md-8 nameBus" style="font-size: 1.5rem"></div>
+                                                </div>
+                                                <div class="row dataBusDetail">
+                                                    <div class="col-md-4" style="text-align: right">เวลาเดินรถ :</div>
+                                                    <div class="col-md-8 timeBus" style="font-size: 1.5rem"></div>
+                                                </div>
+                                                <div class="row dataBusDetail">
+                                                    <div class="col-md-4" style="text-align: right">ราคา :</div>
+                                                    <div class="col-md-8 priceBus" style="font-size: 1.5rem"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <!-- Google Map Start -->
+                                    <div class="col-md-12 col-xl-12">
+                                        <div class="card">
+                                            <div class="card-block">
+                                                <div id="GoogleMap" style="height:517px;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Google Map End -->
+                                </div>
+                            </div>
+                            <!-- photo -->
+                            <div class="col-md-12 col-xl-4">
+                                <!-- dataBusStop-->
+                                <div class="card fb-card">
+                                    <div class="card-header">
+                                        <div class="d-inline-block">
+                                            <h3>จุดจอดรถสองแถว</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-block ">
+                                        <div class="row busRout">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- dataBusStop-->
+                            </div>
+                        </div>
+                        <div class="row">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaQeKMSLPx8XxIlphS7_hxgPdybyUb_OM&callback=initMap">
+        </script>
+        <script src="{% static 'js/dataBusPage.js' %}"></script>
+{% endblock %}
