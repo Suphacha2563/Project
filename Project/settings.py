@@ -84,7 +84,7 @@ DATABASES = {
         'NAME': 'Mini_Bus',
         'USER': 'root',
         'PASSWORD': 'KFCxzqzka8im4GpE',
-        'HOST': '35.197.129.5',
+        'HOST': '/cloudsql/my-project-1578151517886:asia-southeast1:mini-bus-korat',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
