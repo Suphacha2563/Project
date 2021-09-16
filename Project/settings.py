@@ -82,8 +82,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Mini_Bus',
         'USER': 'root',
-        'PASSWORD': 'keep1234',
-        'HOST': 'localhost',
+        'PASSWORD': 'KFCxzqzka8im4GpE',
+        'HOST': '35.197.129.5',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
