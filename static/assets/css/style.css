@@ -4399,7 +4399,7 @@ table tbody .border-bottom-info td {
   visibility: visible; }
 .pcoded[theme-layout="vertical"][vertical-nav-type="compact"][pcoded-device-type="desktop"] .pcoded-header .navbar-logo img {
   padding: 84px;
-  background: url(../images/logo-compact.png) left top no-repeat;
+  /*background: url(../images/logo-compact.png) left top no-repeat;*/
   margin-top: 112px; }
 .pcoded[theme-layout="vertical"][vertical-nav-type="compact"] .pcoded-header .navbar-logo {
   width: 200px;
@@ -8547,11 +8547,11 @@ td.highlight {
   text-align: center; }
 
 td.details-control {
-  background: url("../images/details_open.png") no-repeat center center;
+  /*background: url("../images/details_open.png") no-repeat center center;*/
   cursor: pointer; }
 
 tr.shown td.details-control {
-  background: url("../images/details_close.png") no-repeat center center; }
+  /*background: url("../images/details_close.png") no-repeat center center; }*/
 
 #row-select .selected,
 #row-delete .selected {
@@ -13526,7 +13526,7 @@ table.footable-paging-center > tfoot > tr.footable-paging > td {
     border-top: 9px solid #FC6180;
     transition: all ease-in 0.3s; }
     #task-container li.complete:before {
-      background: url("../images/complete.png") no-repeat;
+      /*background: url("../images/complete.png") no-repeat;*/
       position: absolute;
       top: 5px;
       right: 5px;
