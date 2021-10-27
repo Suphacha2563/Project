@@ -140,10 +140,10 @@ initMap = function () {
     //ส่วนที่2 เรียกใช้ function navigator.geolocation เพื่อระบุพิกัด latitude, longitude ตำแหน่งปัจจุบัน
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function (position) {
-            // myLocation.lat = position.coords.latitude;
-            // myLocation.lng = position.coords.longitude;
-            myLocation.lat = 14.988935;
-            myLocation.lng = 102.117157;
+            myLocation.lat = position.coords.latitude;
+            myLocation.lng = position.coords.longitude;
+            // myLocation.lat = 14.988935;
+            // myLocation.lng = 102.117157;
 
             // ทำ marker บน map จากตำแหน่งที่ได้มาจาก function navigator
             marker = new google.maps.Marker({
